@@ -13,6 +13,7 @@ CSV.foreach(Rails.root.join("movies.csv"), headers: true) do |row|
     movie.title = row[0]
     movie.description = row[1]
     movie.release_date = row[2]
-    movie.image = row[3]
+    movie.rating = row[3]
+    movie.image = row[4]
   end
 end
